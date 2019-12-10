@@ -2,11 +2,11 @@
 format_version: 2
 pipelines:
   Build_Java_Project:
-    group: InfrastructurePipelines
-#    materials:
-#      backend:
-#        git: http://git-repo:3000/gogs/sample-pipeline-backend.git
-#        branch: master
+    group: infrastructure-terraform-pipeline
+    materials:
+      backend:
+        git: https://github.com/eric-mckinley/basic-java.git
+        branch: master
 #      CommitPhasePassed:
 #        pipeline: Backend_CommitPhase
 #        stage: Push_To_Registry
