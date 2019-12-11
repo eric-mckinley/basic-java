@@ -21,7 +21,7 @@ pipelines:
                     command: /bin/bash
                     arguments:
                       - ./pipeline/scripts/java_build_project.sh
-      - E2E_Tests:
+      - Run_Tests:
           jobs:
             Run_E2E_Tests:
               tasks:
