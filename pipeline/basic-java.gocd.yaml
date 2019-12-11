@@ -16,7 +16,7 @@ pipelines:
           jobs:
             Mvn_Compile:
               tasks:
-                - /:
+                - exec:
                     run_if: passed
                     command: /bin/bash
                     arguments:
